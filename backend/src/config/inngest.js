@@ -2,6 +2,7 @@ import { Inngest } from "inngest";
 import { connectDB } from "./db.js";
 import { User } from "../models/user.model.js";
 
+
 // Create a client to send and receive events
 export const inngest = new Inngest({ id: "banter-app" });
 
