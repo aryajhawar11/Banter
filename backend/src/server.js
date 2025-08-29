@@ -4,6 +4,7 @@ import { connectDB } from './config/db.js';
 import { clerkMiddleware } from '@clerk/express';
 import {serve} from "inngest/express"
 import { inngest, functions } from '../src/config/inngest.js';
+import chatRoutes from './routes/chat.route.js'
 
 
 const app = express();
@@ -11,6 +12,7 @@ const app = express();
 app.use(express.json())
 app.use(clerkMiddleware()); //req.auth will be available in the request object
 app.use("/api/inngest", serve({ client: inngest, functions }));
+app.use("/api/chat", chatRoutes);
 
 
 const PORT= process.env.PORT || 5001;
