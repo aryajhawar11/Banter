@@ -7,7 +7,7 @@ const AuthPage = () => {
       <div className="auth-left">
         <div className="auth-hero">
           <div className="brand-container">
-            <img src="/public/Banter_logo-removebg-preview.png" alt="Banter" className="brand-logo" />
+            <img src="../public/Banter_logo-removebg-preview.png" alt="Banter" className="brand-logo" />
             <span className="brand-name">Banter</span>
           </div>
 
@@ -46,7 +46,7 @@ const AuthPage = () => {
 
       <div className="auth-right">
         <div className="auth-image-container">
-          <img src="/public/Gemini_Generated_Image_bgremoved.png" alt="Team collaboration" className="auth-image" />
+          <img src="../public/Gemini_Generated_Image_bgremoved.png" alt="Team collaboration" className="auth-image" />
           <div className="image-overlay"></div>
         </div>
       </div>
