@@ -1,5 +1,5 @@
 import React from 'react'
-import { SignedIn, SignedOut, UserButton, SignInButton } from '@clerk/clerk-react'
+import { useAuth } from "@clerk/clerk-react";
 import HomePage from './pages/HomePage'
 import AuthPage from './pages/AuthPage'
 import { Navigate } from 'react-router'
